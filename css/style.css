@@ -5,19 +5,19 @@
 }
 
 body {
-  font-family: 'Quicksand', ;"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  font-family: 'Quicksand', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
   "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: .8px;
   word-break: break-all;
-  color: #c1ab96;
+  color: #606060;
 }
 
 a {
   text-decoration: none;
-  color: #7b0f10;
+  color: #606060;
 }
 
 img {
@@ -57,6 +57,7 @@ li {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .12);
 }
 
+
 /*--------------------------------
  文字
 ---------------------------------*/
@@ -67,6 +68,7 @@ li {
   line-height: 1;
   margin-bottom: 15px;
   letter-spacing: .05em;
+  color: #fff;
 }
 
 .section-heading {
@@ -77,7 +79,7 @@ li {
 .section-lead {
   margin-bottom: 30px;
   text-align: center;
-  color: #333029;
+  color: #606060;
 }
 
 .text-bold {
@@ -96,7 +98,7 @@ li {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 
 .inner {
@@ -112,7 +114,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 86vh;
+  height: 60vh;
 }
 
 .logo {
@@ -127,7 +129,7 @@ li {
   font-size: 64px;
   line-height: 1;
   letter-spacing: .2em;
-  color: #333029;
+  color: #606060;
 }
 
 .logo-subtitle {
@@ -135,7 +137,7 @@ li {
   margin-top: 5px;
   text-align: center;
   letter-spacing: .2em;
-  color: #7b0f10;
+  color: #fff;
 }
 
 /*--------------------------------
@@ -147,7 +149,7 @@ li {
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: #c1ab96;
+  /* background-color: #e9e8fc; */
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
@@ -189,7 +191,7 @@ li {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color:  #7b0f10;
+  background-color:  #606060;
 }
 
 .gnav-link:hover:after {
@@ -425,12 +427,21 @@ li {
   margin-top: 10px;
   text-align: center;
 }
+.gradient{
+  height: 100%;
+  background-image: linear-gradient(to bottom,
+  #dcdbfb 0%,
+  #c3f5f2 40%,
+  #adf9f5 60%,
+  #f9e3f4 100%);
+}
 
 /*--------------------------------
  フッター
 ---------------------------------*/
 .footer {
-  background-color: #c1ab96;
+  background-color: #e9e8fc;
+  color: #606060;
 }
 
 .footer .inner {
@@ -440,18 +451,18 @@ li {
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #fff;
+  color: #606060;
 }
 
 .page-top {
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: #606060;
   display: block;
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ccc;
+  /* background-color: #e9e8fc; */
   
 }
 
