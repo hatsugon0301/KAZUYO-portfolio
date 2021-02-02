@@ -65,11 +65,13 @@ li {
   font-family: "Open sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
+  font-style: italic;
   line-height: 1;
   margin-bottom: 15px;
   letter-spacing: .05em;
-  color: #fff;
+  color: #333;
 }
+
 
 .section-heading {
   margin-bottom: 20px;
@@ -114,8 +116,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 60vh; 
+  
 }
+
 
 .logo {
   position: relative;
@@ -123,42 +127,82 @@ li {
   padding: 0 20px;
   text-align: center;
 }
+ .logo-title{
+  animation: 4s fadeIn;
+}
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+} 
+
 
 .logo-title {
-  font-family: "Open sans", sans-serif;
-  font-size: 64px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-weight: lighter;
   line-height: 1;
   letter-spacing: .2em;
-  color: #606060;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 0.5px #A79F88;
+  position: absolute;
+  bottom: 16%;
+  left:4%;
 }
 
 .logo-subtitle {
   font-size: 20px;
+  font-style: italic;
   margin-top: 5px;
   text-align: center;
   letter-spacing: .2em;
-  color: #fff;
+  color: #A79F88;
+  text-shadow: 0px 0.5px 0.5px #A79F88;
+  position: absolute;
+  bottom: 10%;
+  left:10%; 
 }
+.logo-subtitle{
+  animation: 6s fadeIn;
+}
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+} 
+
 
 /*--------------------------------
  グローバルナビ
 ---------------------------------*/
 .gnav {
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
-  /* background-color: #e9e8fc; */
+  background-color:  #fff; 
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+}
+.logo-img{
+  width: 160px;
 }
 
 .gnav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 56%;
 }
 
 .gnav-item {
@@ -174,7 +218,7 @@ li {
   padding: 20px 0;
   -webkit-transition: .3s;
   transition: .3s;
-  color: #fff;
+  color: #333;
 }
 
 .gnav-link:hover {
@@ -207,6 +251,10 @@ li {
 /*--------------------------------
  Works
 ---------------------------------*/
+.works-section{
+  margin-top: 300px;
+  
+}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -240,7 +288,9 @@ li {
 
 .works-url {
   font-size: 10px;
-  color: #7b0f10;
+}
+.works-url a{
+  color: rgb(88, 181, 218)
 }
 
 .works-image.fadein {
@@ -283,6 +333,13 @@ li {
 /*--------------------------------
  About
 ---------------------------------*/
+.about-section{
+  background-image: url("../img/bg-about.jpg") ;
+  background-size: cover;
+  background-position: 80% 80%;
+  
+}
+
 .about-section .inner {
   max-width: 1000px;
 }
@@ -427,21 +484,13 @@ li {
   margin-top: 10px;
   text-align: center;
 }
-.gradient{
-  height: 100%;
-  background-image: linear-gradient(to bottom,
-  #dcdbfb 0%,
-  #c3f5f2 40%,
-  #adf9f5 60%,
-  #f9e3f4 100%);
-}
 
 /*--------------------------------
  フッター
 ---------------------------------*/
 .footer {
-  background-color: #e9e8fc;
-  color: #606060;
+  background-color: #333;
+  color: #fff;
 }
 
 .footer .inner {
@@ -451,18 +500,20 @@ li {
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #606060;
+  background-color: #333;
+  color: #fff;
 }
 
 .page-top {
   font-size: 12px;
   font-weight: bold;
-  color: #606060;
+  color: #000;
   display: block;
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  /* background-color: #e9e8fc; */
+  border-bottom: solid 1px ;
+  background-color: #eeedef;
   
 }
 
