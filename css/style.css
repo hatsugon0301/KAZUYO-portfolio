@@ -253,8 +253,10 @@ to {
 ---------------------------------*/
 .works-section{
   margin-top: 300px;
+
+  }
   
-}
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -373,6 +375,27 @@ to {
 
 .about-body p:not(:last-child) {
   margin-bottom: 20px;
+}
+.btn{
+  min-width: 120px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: .75em 1.5em;
+  text-align: center;
+  line-height: 150%;
+  font-size: 16px;
+  border-radius: 6px;
+  background: linear-gradient(#347CE5, #54C5F7);
+  color: #ffffff;
+}
+.btn a{
+  font-size: 20px;
+  color:#333;
+}
+.btn:hover{
+  opacity: 0.8;
 }
 
 /*--------------------------------
